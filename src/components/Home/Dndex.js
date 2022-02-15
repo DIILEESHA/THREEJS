@@ -3,11 +3,11 @@ import "./dnd.css";
 import { OrbitControls ,Stars,RoundedBox} from "@react-three/drei";
 import * as THREE from "three";
 
-import EarthDayMap from "../../assests/textures/earthdaymap.jpg";
+import EarthDayMap from "../../assests/txt/earthdaymap.jpg";
 // import Nigths from '../../assests/textures/nightmap.jfif'
-import Normal from "../../assests/textures/normalmap.jfif";
-import Clouds from "../../assests/textures/cloudsmap.jfif";
-import Specular from "../../assests/textures/specular.jfif";
+import Normal from "../../assests/txt/normalmap.jfif";
+import Clouds from "../../assests/txt/cloudsmap.jfif";
+import Specular from "../../assests/txt/specular.jfif";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { SphereGeometry, TextureLoader } from "three";
 
