@@ -33,7 +33,7 @@ cloudyRef.current.rotation.y = time / 7
 
   return (
     <>
-    <pointLight color="#f6f6fb" position={[2,0,5]} intensity = {1.2}/>
+    <pointLight color="#f6f6fb" position={[2,0,2]} intensity = {1.2}/>
  <Stars
   radius={300} // Radius of the inner sphere (default=100)
   depth={50} // Depth of area where stars should fit (default=50)
@@ -43,8 +43,8 @@ cloudyRef.current.rotation.y = time / 7
   fade // Faded dots (default=false)
 />
       <ambientLight intensity={1} />
-      <mesh ref={cloudyRef} position={[0,0,3]}>
-        <sphereGeometry args={[1.002, 32, 32]} />
+      <mesh ref={cloudyRef} >
+        <sphereGeometry args={[2.002, 32, 32]} />
         <meshPhongMaterial
           map={cloudsmap}
           opacity={0.2}
@@ -53,8 +53,8 @@ cloudyRef.current.rotation.y = time / 7
           side={THREE.DoubleSide}
         />
       </mesh>
-      <mesh ref={earthRef} position={[0,0,3]}>
-        <sphereGeometry  args={[1.0, 32, 32]} />
+      <mesh ref={earthRef} >
+        <sphereGeometry  args={[2.0, 32, 32]} />
         <meshPhongMaterial specularMap={specularmap} />
         <meshStandardMaterial map={daymap} normalmap={normalmap} />
         <OrbitControls

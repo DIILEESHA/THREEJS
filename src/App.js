@@ -2,7 +2,7 @@ import "./app.css";
 import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import Dndex from "./components/Home/Dndex";
+import Dndex from "./components/Home/Dndex"
 
 
 const Container = styled.div`
